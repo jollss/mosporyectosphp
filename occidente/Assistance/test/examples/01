@@ -1,0 +1,15 @@
+<?php
+// Imagen base64 enviada desde javascript en el formulario
+// En este caso, con PHP plano podriamos obtenerla usando :
+// $baseFromJavascript = $_POST['base64'];
+$baseFromJavascript = "data:image/png;base64,BBBFBfj42Pj4";
+
+// Remover la parte de la cadena de texto que no necesitamos (data:image/png;base64,)
+// y usar base64_decode para obtener la información binaria de la imagen
+$data = base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $baseFromJavascript));
+
+$filepath = "photo/imageNormal.png"; // or image.jpg
+
+// Finalmente guarda la imágen en el directorio especificado y con la informacion dada
+file_put_contents($filepath,$data);
+?>

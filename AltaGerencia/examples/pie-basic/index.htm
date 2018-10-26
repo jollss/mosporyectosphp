@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Highcharts Example</title>
+
+		<style type="text/css">
+
+		</style>
+	</head>
+	<body>
+<script src="../../code/highcharts.js"></script>
+<script src="../../code/modules/exporting.js"></script>
+<script src="../../code/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+
+
+		<script type="text/javascript">
+
+Highcharts.chart('container', {
+    chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: 'Ventas de Joel del 2018'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                }
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'marzo',
+            y: 61.41,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'Abril',
+            y: 11.84
+        }, {
+            name: 'Mayo',
+            y: 10.85
+        }, {
+            name: 'Junio',
+            y: 4.67
+        }, {
+            name: 'Julio',
+            y: 4.18
+        }, {
+            name: 'Agosto',
+            y: 1.64
+        }, {
+            name: 'Septiembre',
+            y: 1.6
+        }, {
+            name: 'Octubre',
+            y: 1.2
+        }, {
+            name: 'Enero',
+            y: 2.61
+        }]
+    }]
+});
+		</script>
+	</body>
+</html>

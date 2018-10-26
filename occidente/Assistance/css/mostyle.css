@@ -1,0 +1,27 @@
+td .options{
+	width: 100px !important;
+	/*background-color: green;*/
+}
+.bajantes{
+	background-color: #99D9FF !important;
+}
+.personal{
+	background-color: #99FFA4 !important;
+}
+.fielder{
+	background-color: #F4FF99 !important;
+}
+.checked-permisos{
+	color: red;
+}
+/*-----------------------------------------------------------------check*/
+.negativo 
+{ 
+	background-color: black; 
+	color:white;
+} 
+.afirmativo 
+{ 
+	background-color: white; 
+	color:black;
+} 

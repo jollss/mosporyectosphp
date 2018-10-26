@@ -1,0 +1,217 @@
+<?php
+require_once '../Config/main.php';
+require_once '../Config/foot.php';
+include("../Config/conexion2.php");  
+require_once '../Config/conexion.php';
+if (session_id() ==''){ 
+    session_start();
+}
+if($_SESSION['username']=="")
+{
+  header("Location: ../login.html");
+}
+date_default_timezone_set('America/Mexico_City');
+$cnxe = Conectarse(); 
+$con = Conectarse();  
+$con2 = Conectarse(); 
+$con3 = Conectarse();
+$con4 = Conectarse();
+$mail = $_SESSION['mail'];
+$user = $_SESSION['username'];
+$cnxe->real_query("SELECT * FROM usuario WHERE correo = '$mail'");
+$result = $cnxe->use_result();
+while ($line = $result->fetch_assoc()){
+    $iduser=$line['idu'];
+}
+$tos=0;
+$idus=$_POST['ident'];
+$con2->real_query("SELECT * FROM usuario WHERE idu='$idus'");
+    $resultado = $con2->use_result();
+    while ($row = $resultado->fetch_assoc()){
+        $tos++;
+        $nus=$row['nombre'];
+        $apus=$row['apaterno'];
+        $amus=$row['amaterno'];
+    }
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>MOS Proyectos</title>
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/slider.css" rel="stylesheet">
+<script type="text/javascript" src="../js/browser5.js"></script>
+        
+<?php
+    nivel1($user);
+
+function UltimoDia($anho,$mes){ 
+   if (((fmod($anho,4)==0) and (fmod($anho,100)!=0)) or (fmod($anho,400)==0)) { 
+       $dias_febrero = 29; 
+   } else { 
+       $dias_febrero = 28; 
+   } 
+   switch($mes) { 
+       case 01: return 31; break; 
+       case 02: return $dias_febrero; break; 
+       case 03: return 31; break; 
+       case 04: return 30; break; 
+       case 05: return 31; break; 
+       case 06: return 30; break; 
+       case 07: return 31; break; 
+       case 08: return 31; break; 
+       case 09: return 30; break; 
+       case 10: return 31; break; 
+       case 11: return 30; break; 
+       case 12: return 31; break; 
+   } 
+}
+?>
+</head>
+<body>
+<br><br><br><br>
+<div class="container col-md-12" name="toTop" id="topPos">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-10">
+    <div align="center"><h3><?php echo $user;?></h3></div>
+        <div class="panel panel-info">
+            <?php
+            $dia=date('j');
+            $mes=date('n');
+            $aaaa=date('Y');
+            //$semana=UltimoDia($aaaa,$mes);
+            //$pago=$semana/2;
+            $semana = date("W");
+            //echo "<h3>Días del mes ".$semana."</h3>";
+            ?>
+             <div class="panel-heading"><?php echo $dia."/".$mes."/".$aaaa;?><h4>Semana:<?php echo $semana;?></h4></div>
+            <div class="panel-body">
+            <?php
+            $dia=date('j');
+            $mes=date('n');
+            $aaaa=date('Y');
+            $dmes=UltimoDia($aaaa,$mes);
+            $pago=$dmes/2;
+            $semana = date("W");
+            echo "<br> Usuario : ".$nus." ".$apus." ".$amus;
+            //echo "<form><input type='submit' value='".$idus."'></form>";
+
+            ?>
+            <div align="center">
+                <div id="graph3" class="responsive" style="min-width: 100%; height: 100%;margin: 0 auto"></div>
+            </div>
+        </div>
+        <?php footer();?>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+<div class="col-md-2"></div>
+<script src="../js/jquery-3.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="../js/exporting.js"></script>
+<script type="text/javascript" src="../js/highcharts.js"></script>
+
+<script type="text/javascript">
+    Highcharts.chart('graph3', {
+    chart: {
+        plotBackgroundColor: 'white',
+        plotBorderWidth: 0,
+        plotShadow: false
+    },
+    title: {
+        text: 'Semana <?php echo $semana;?><br>',
+        align: 'center',
+        verticalAlign: 'middle',
+        y: 40,
+        color:'white'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    credits: {
+        enabled: false
+    },
+    plotOptions: {
+        pie: {
+            dataLabels: {
+                enabled: true,
+                distance: -50,
+                style: {
+                    fontWeight: 'bold',
+                    color: 'black'
+                }
+            },
+            startAngle: -90,
+            endAngle: 90,
+            center: ['50%', '75%']
+        }
+    },
+    series: [{
+        type: 'pie',
+        name: 'Ordenes de Servicio',
+        innerSize: '65%',
+        data: [
+        <?php
+            $con->real_query("SELECT * FROM usuario WHERE idu='$idus' ORDER BY idu");
+            $result = $con->use_result();
+            $ordenes=0;
+            while ($line = $result->fetch_assoc()){
+                $cCO=0;
+                $cFO=0;
+                $cHI=0;
+                $cVO=0;
+                $cPCR=0;
+                $contador=0;
+                $con3->real_query("SELECT * FROM os 
+                                INNER JOIN osdata
+                                WHERE os.usuario_idu='$idus' AND osdata.os_idos=os.idos AND semana='$semana'");
+                $rs = $con3->use_result();
+                while ($ls = $rs->fetch_assoc()){
+                    //echo "data: [".$ls['usuario_idu'].",]";
+                    $contador=$contador+1;
+                    if($ls['tipo_instalacion']=='COBRE'){ $cCO= $cCO+1;}
+                    if($ls['tipo_instalacion']=='FIBRA'){ $cFO= $cFO+1;}
+                    if($ls['tipo_instalacion']=='HIBRIDO'){ $cHI= $cHI+1;}
+                    if($ls['tipo_instalacion']=='VOZ'){ $cVO= $cVO+1;}
+                    if($ls['tipo_instalacion']=='PCR'){ $cPCR= $cPCR+1;}                    
+                }
+                echo"[";
+                echo "'COBRE',".$cCO;
+                echo"],";
+                echo"[";
+                echo "'FIBRA OPTICA',".$cFO;
+                echo"],";
+                echo"[";
+                echo "'HIBRIDO',".$cHI;
+                echo"],";
+                echo"[";
+                echo "'VOZ',".$cVO;
+                echo"],";
+                echo"[";
+                echo "'PCR',".$cPCR;
+                echo"],";
+                /*
+                $contador=0;
+                $con3->real_query("SELECT * FROM os WHERE usuario_idu='$idus' AND mm='$mes' ORDER BY dd");
+                $rs = $con3->use_result();
+                while ($ls = $rs->fetch_assoc()){
+                    //echo "data: [".$ls['usuario_idu'].",]";
+                    $contador=$contador+1;
+                }
+                echo"[";
+                echo "'ABIERTO',".$contador;
+                echo"],";*/
+             }
+             ?>
+        ]
+    }]
+});
+</script>
+</body>
+</html>

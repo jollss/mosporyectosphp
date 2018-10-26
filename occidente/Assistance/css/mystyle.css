@@ -1,0 +1,58 @@
+/*Boton Rojo MOS*/
+.btn-mosRed {
+  color: white;
+  background-color: rgba(238, 50, 21, 1);
+  border-color: #ccc;
+}
+.btn-mosRed:focus,
+.btn-mosRed.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-mosRed:hover {
+  color: white;
+  background-color: rgba(215, 44, 44, 0.7);
+  border-color: #adadad;
+}
+.btn-mosRed:active,
+.btn-mosRed.active,
+.open > .dropdown-toggle.btn-mosRed {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.btn-mosRed:active:hover,
+.btn-mosRed.active:hover,
+.open > .dropdown-toggle.btn-mosRed:hover,
+.btn-mosRed:active:focus,
+.btn-mosRed.active:focus,
+.open > .dropdown-toggle.btn-mosRed:focus,
+.btn-mosRed:active.focus,
+.btn-mosRed.active.focus,
+.open > .dropdown-toggle.btn-mosRed.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.btn-mosRed:active,
+.btn-mosRed.active,
+.open > .dropdown-toggle.btn-mosRed {
+  background-image: none;
+}
+.btn-mosRed.disabled:hover,
+.btn-mosRed[disabled]:hover,
+fieldset[disabled] .btn-mosRed:hover,
+.btn-mosRed.disabled:focus,
+.btn-mosRed[disabled]:focus,
+fieldset[disabled] .btn-mosRed:focus,
+.btn-mosRed.disabled.focus,
+.btn-mosRed[disabled].focus,
+fieldset[disabled] .btn-mosRed.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-mosRed .badge {
+  color: #fff;
+  background-color: #333;
+}

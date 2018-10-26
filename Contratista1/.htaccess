@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^(.*)$ https://www.mosproyectos.com.mx/$1 [R,L]

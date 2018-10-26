@@ -1,0 +1,68 @@
+* {
+    transition-duration: 0.2s;
+}
+html{
+  font-size: 12px !important;
+}
+body {
+    padding-top: 80px; 
+    background-color: #000; 
+}
+section {
+    margin-top: 40px;
+}
+section:first-of-type {
+    margin-top: 0;
+}
+.page-heading {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.divider {
+    border-bottom: 1px solid #ccc;
+}
+#fake-footer {
+    height:20%;
+    widith: 20%;
+    background: #000000;
+}
+li a {
+    transition-duration: 1s;
+}
+
+/* Helpers for top position on internal page links
+====================================================*/
+#topPos:before,
+h3:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -80px; 
+  height: 80px; 
+  visibility: hidden; 
+}
+/* AFFIX STYLES
+====================================================*/
+.panel-affix {
+    min-width: 225px;
+}
+
+.colors-foot{
+  background-color: #fff;
+}
+/*colors bar
+=================================================*/
+/*nav.navbar {
+    background-color: #A8A7A7;
+}*/
+nav.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    
+}
+.navbar-right{
+  margin-right: 20px;
+}
+.navbar-brand{
+  font-size: 10px;
+}

@@ -1,0 +1,120 @@
+<?php
+include("../Config/library.php"); 
+$self = $_SERVER['PHP_SELF']; //Obtenemos la página en la que nos encontramos
+header("refresh:12; url=$self"); 
+date_default_timezone_set('America/Mexico_City');
+$con = Conectarse();  
+$correo = $_SESSION['mail'];
+$user = $_SESSION['username'];
+$idus=0;
+$tos=0;
+$Yo = new Usuario();
+$P=new Pendiente();
+$Yo->obtenerUsuarioCorreoBD($correo,$con);
+$iduser=$Yo->regresaIdu();
+$tod=$P->totalPendiente($con);
+for ($i=0; $i < $tod; $i++) {                                 
+    $Pendiente=new Pendiente();                                
+    $Pendiente->obtenerPendienteBD($i,$con);
+    $idp=$Pendiente->regresaIdpe();
+    $status=$Pendiente->regresaStatus();
+    if($status==0){$tos=$tos+1;}
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>MOS Proyectos</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/slider.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/browser5.js"></script>    
+    <?php
+        nivel2($user);
+    ?>
+</head>
+<body>
+<br><br><br><br>
+<div class="container col-md-12" name="toTop" id="topPos">
+    <div class="col-md-6">
+    <br><br><br>
+        <div class="panel panel-info">
+                <div class="panel-heading">
+                    Pendientes  <a href=" addpendiente.php" class="btn btn-danger">+</a>
+                    <h4 style="color:red;"><b><?php echo $tos;?></b></h4>
+                </div>
+                <div class="panel-body" style="background:#B40404;">
+                    <form action="delpendiente.php" method="POST">
+                        <div class="table-responsive">
+                            <table class="table table-bordered" style="background-color:white;">
+                                <tr>
+                                  <th>No.</th>
+                                  <th>Fecha</th>
+                                  <th>Titulo</th>                              
+                                  <th>Detalles</th>
+                                  <th>DE</th>
+                                </tr>
+                                <?php 
+                                for ($i=0; $i < $tod; $i++) {                                 
+                                    $Pendientes=new Pendiente();                                
+                                    $Pendientes->obtenerPendienteBD($i,$con);
+                                    $idp=$Pendientes->regresaIdpe();
+                                    $status=$Pendientes->regresaStatus();
+                                    
+                                    $fecha=$Pendientes->regresaFechap();
+                                    $titulo=$Pendientes->regresaTtituloP();
+                                    $detalle=$Pendientes->regresaDetallep();
+                                    $iduser=$Pendientes->regresaUsuario_idu();
+                                    if($status==0){
+                                    $Usuarios= new Usuario();
+                                    $Usuarios->obtenerUsuarioBD($iduser,$con);
+                                    $usa = $Usuarios->regresaIdu();
+                                    $den = $Usuarios->regresaNombre();
+                                    $deap= $Usuarios->regresaApaterno();
+                                    ?>  
+                                    <tr style="font-size:12px;">
+                                        <th><input class="btn btn-danger" name="ident" type="submit" value="<?php echo $idp;?>"></th>
+                                        <th><?php echo $fecha;?></th>
+                                        <th><?php echo $titulo;?></th>
+                                        <th><?php echo $detalle;?></th>
+                                        <th><?php echo $den." ".$deap;?></th>
+                                    </tr>
+                                    <?php
+                                    }
+                                }
+                                ?>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <!--
+    <div class="col-md-6">
+    <br><br><br>
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            Avisos:  
+            <label>Solo puedes subir 4 imagenes</label>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                Selecciona una imagen a subir:
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Subir Aviso" name="submit">
+            </form>
+        </div>
+        <div class="panel-body" style="">
+        </div>
+    </div>
+    -->
+</div>
+<div class="col-md-12">
+<?php footer();?>
+</div>
+<script src="../js/jquery-3.2.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</body>
+</html>

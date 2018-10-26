@@ -1,0 +1,171 @@
+Aug 29 13:53:05 10.71.55.12 tmp77191306-2140 Connection from 10.71.55.12 port 17726 on 50.21.188.83 port 22
+Aug 29 13:53:06 10.71.55.12 tmp77191306-2140 Accepted password for tmp77191306-2140 from 10.71.55.12 port 17726 ssh2
+Aug 29 13:53:06 10.71.55.12 tmp77191306-2140 Starting session: subsystem 'sftp' for tmp77191306-2140 from 10.71.55.12 port 17726
+Aug 29 13:53:06 10.71.55.12 tmp77191306-2140 session opened for local user tmp77191306-2140 from [10.71.55.12]
+Aug 29 15:06:30 10.71.55.12 tmp77191306-2140 session closed for local user tmp77191306-2140 from [10.71.55.12]
+Aug 29 15:06:30 10.71.55.12 tmp77191306-2140 Connection closed by 10.71.55.12
+Aug 29 17:11:32 10.71.55.18 tmp77191306-7411 Connection from 10.71.55.18 port 58046 on 50.21.188.83 port 22
+Aug 29 17:11:33 10.71.55.18 tmp77191306-7411 Accepted password for tmp77191306-7411 from 10.71.55.18 port 58046 ssh2
+Aug 29 17:11:33 10.71.55.18 tmp77191306-7411 Starting session: subsystem 'sftp' for tmp77191306-7411 from 10.71.55.18 port 58046
+Aug 29 17:11:33 10.71.55.18 tmp77191306-7411 session opened for local user tmp77191306-7411 from [10.71.55.18]
+Aug 29 17:53:31 10.71.55.18 tmp77191306-7411 Connection closed by 10.71.55.18
+Aug 29 17:53:31 10.71.55.18 tmp77191306-7411 session closed for local user tmp77191306-7411 from [10.71.55.18]
+Aug 29 20:37:59 10.71.53.14 tmp77191306-2938 Connection from 10.71.53.14 port 22326 on 50.21.188.83 port 22
+Aug 29 20:38:00 10.71.53.14 tmp77191306-2938 Accepted password for tmp77191306-2938 from 10.71.53.14 port 22326 ssh2
+Aug 29 20:38:00 10.71.53.14 tmp77191306-2938 Starting session: subsystem 'sftp' for tmp77191306-2938 from 10.71.53.14 port 22326
+Aug 29 20:38:00 10.71.53.14 tmp77191306-2938 session opened for local user tmp77191306-2938 from [10.71.53.14]
+Aug 29 20:57:16 10.71.53.14 tmp77191306-2938 session closed for local user tmp77191306-2938 from [10.71.53.14]
+Aug 29 20:57:16 10.71.53.14 tmp77191306-2938 Connection closed by 10.71.53.14
+Aug 30 09:48:51 10.71.53.18 u77191306-1 Connection from 10.71.53.18 port 16412 on 50.21.188.83 port 22
+Aug 30 09:48:58 10.71.53.18 u77191306-1 Accepted password for u77191306-1 from 10.71.53.18 port 16412 ssh2
+Aug 30 09:48:58 10.71.53.18 u77191306-1 Starting session: subsystem 'sftp' for u77191306-1 from 10.71.53.18 port 16412
+Aug 30 09:48:59 10.71.53.18 u77191306-1 session opened for local user u77191306-1 from [10.71.53.18]
+Aug 30 09:50:13 10.71.53.18 u77191306-1 Connection from 10.71.53.18 port 55536 on 50.21.188.83 port 22
+Aug 30 09:50:14 10.71.53.18 u77191306-1 Accepted password for u77191306-1 from 10.71.53.18 port 55536 ssh2
+Aug 30 09:50:14 10.71.53.18 u77191306-1 Starting session: subsystem 'sftp' for u77191306-1 from 10.71.53.18 port 55536
+Aug 30 09:50:14 10.71.53.18 u77191306-1 session opened for local user u77191306-1 from [10.71.53.18]
+Aug 30 09:50:14 10.71.53.18 u77191306-1 open "/Config/conexion.php" flags READ mode 0666
+Aug 30 09:50:15 10.71.53.18 u77191306-1 close "/Config/conexion.php" bytes read 330 written 0
+Aug 30 09:50:15 10.71.53.18 u77191306-1 [10.71.53.18|get|1|330|0|0|0|2f436f6e6669672f636f6e6578696f6e2e706870|]
+Aug 30 09:50:43 10.71.53.18 u77191306-1 open "/Config/conexion.php" flags READ mode 0666
+Aug 30 09:50:43 10.71.53.18 u77191306-1 close "/Config/conexion.php" bytes read 330 written 0
+Aug 30 09:50:43 10.71.53.18 u77191306-1 [10.71.53.18|get|0|330|0|0|0|2f436f6e6669672f636f6e6578696f6e2e706870|]
+Aug 30 09:51:43 10.71.53.18 u77191306-1 session closed for local user u77191306-1 from [10.71.53.18]
+Aug 30 09:51:43 10.71.53.18 u77191306-1 Connection closed by 10.71.53.18
+Aug 30 09:51:52 10.71.53.18 u77191306-1 Connection from 10.71.53.18 port 45786 on 50.21.188.83 port 22
+Aug 30 09:51:53 10.71.53.18 u77191306-1 Accepted password for u77191306-1 from 10.71.53.18 port 45786 ssh2
+Aug 30 09:51:53 10.71.53.18 u77191306-1 Starting session: subsystem 'sftp' for u77191306-1 from 10.71.53.18 port 45786
+Aug 30 09:51:53 10.71.53.18 u77191306-1 session opened for local user u77191306-1 from [10.71.53.18]
+Aug 30 09:51:53 10.71.53.18 u77191306-1 open "/Config/conexion2.php" flags READ mode 0666
+Aug 30 09:51:53 10.71.53.18 u77191306-1 close "/Config/conexion2.php" bytes read 434 written 0
+Aug 30 09:51:53 10.71.53.18 u77191306-1 [10.71.53.18|get|0|434|0|0|0|2f436f6e6669672f636f6e6578696f6e322e706870|]
+Aug 30 09:52:53 10.71.53.18 u77191306-1 session closed for local user u77191306-1 from [10.71.53.18]
+Aug 30 09:52:53 10.71.53.18 u77191306-1 Connection closed by 10.71.53.18
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Connection from 10.71.53.18 port 57800 on 50.21.188.83 port 22
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Accepted password for u77191306-1 from 10.71.53.18 port 57800 ssh2
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Connection from 10.71.53.18 port 57836 on 50.21.188.83 port 22
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Accepted password for u77191306-1 from 10.71.53.18 port 57836 ssh2
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Starting session: subsystem 'sftp' for u77191306-1 from 10.71.53.18 port 57800
+Aug 30 10:08:37 10.71.53.18 u77191306-1 Starting session: subsystem 'sftp' for u77191306-1 from 10.71.53.18 port 57836
+Aug 30 10:08:37 10.71.53.18 u77191306-1 session opened for local user u77191306-1 from [10.71.53.18]
+Aug 30 10:08:37 10.71.53.18 u77191306-1 session opened for local user u77191306-1 from [10.71.53.18]
+Aug 30 10:08:38 10.71.53.18 u77191306-1 sent status No such file
+Aug 30 10:08:38 10.71.53.18 u77191306-1 open "/listOS.php" flags READ mode 0666
+Aug 30 10:08:38 10.71.53.18 u77191306-1 open "/login.php" flags READ mode 0666
+Aug 30 10:08:38 10.71.53.18 u77191306-1 close "/listOS.php" bytes read 491 written 0
+Aug 30 10:08:38 10.71.53.18 u77191306-1 [10.71.53.18|get|0|491|0|0|0|2f6c6973744f532e706870|]
+Aug 30 10:08:38 10.71.53.18 u77191306-1 close "/login.php" bytes read 11988 written 0
+Aug 30 10:08:38 10.71.53.18 u77191306-1 [10.71.53.18|get|0|11988|0|0|0|2f6c6f67696e2e706870|]
+Aug 30 10:08:38 10.71.53.18 u77191306-1 open "/login 2.php" flags READ mode 0666
+Aug 30 10:08:38 10.71.53.18 u77191306-1 open "/login.html" flags READ mode 0666
+Aug 30 10:08:38 10.71.53.18 u77191306-1 close "/login 2.php" bytes read 12231 written 0
+Aug 30 10:08:38 10.71.53.18 u77191306-1 [10.71.53.18|get|0|12231|0|0|0|2f6c6f67696e20322e706870|]
+Aug 30 10:08:38 10.71.53.18 u77191306-1 open "/log_in.php" flags READ mode 0666
+Aug 30 10:08:39 10.71.53.18 u77191306-1 close "/log_in.php" bytes read 10309 written 0
+Aug 30 10:08:39 10.71.53.18 u77191306-1 [10.71.53.18|get|1|10309|0|0|0|2f6c6f675f696e2e706870|]
+Aug 30 10:08:39 10.71.53.18 u77191306-1 open "/.htaccess" flags READ mode 0666
+Aug 30 10:08:39 10.71.53.18 u77191306-1 close "/.htaccess" bytes read 127 written 0
+Aug 30 10:08:39 10.71.53.18 u77191306-1 [10.71.53.18|get|0|127|0|0|0|2f2e6874616363657373|]
+Aug 30 10:08:39 10.71.53.18 u77191306-1 open "/AVISO PRIVACIDAD MOS.pdf" flags READ mode 0666
+Aug 30 10:08:40 10.71.53.18 u77191306-1 close "/AVISO PRIVACIDAD MOS.pdf" bytes read 258994 written 0
+Aug 30 10:08:40 10.71.53.18 u77191306-1 [10.71.53.18|get|1|258994|0|0|0|2f415649534f2050524956414349444144204d4f532e706466|]
+Aug 30 10:08:40 10.71.53.18 u77191306-1 open "/.mysql_history" flags READ mode 0666
+Aug 30 10:08:40 10.71.53.18 u77191306-1 close "/.mysql_history" bytes read 176 written 0
+Aug 30 10:08:40 10.71.53.18 u77191306-1 [10.71.53.18|get|0|176|0|0|0|2f2e6d7973716c5f686973746f7279|]
+Aug 30 10:08:40 10.71.53.18 u77191306-1 close "/login.html" bytes read 2216 written 0
+Aug 30 10:08:40 10.71.53.18 u77191306-1 [10.71.53.18|get|2|2216|0|0|0|2f6c6f67696e2e68746d6c|]
+Aug 30 10:08:40 10.71.53.18 u77191306-1 open "/.bash_history" flags READ mode 0666
+Aug 30 10:08:40 10.71.53.18 u77191306-1 open "/zip.php" flags READ mode 0666
+Aug 30 10:08:40 10.71.53.18 u77191306-1 close "/.bash_history" bytes read 1085 written 0
+Aug 30 10:08:40 10.71.53.18 u77191306-1 [10.71.53.18|get|0|1085|0|0|0|2f2e626173685f686973746f7279|]
+Aug 30 10:08:40 10.71.53.18 u77191306-1 close "/zip.php" bytes read 9695 written 0
+Aug 30 10:08:40 10.71.53.18 u77191306-1 [10.71.53.18|get|0|9695|0|0|0|2f7a69702e706870|]
+Aug 30 10:08:40 10.71.53.18 u77191306-1 open "/maps.php" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/consulta.php" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/maps.php" bytes read 1648 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|1|1648|0|0|0|2f6d6170732e706870|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/consulta.php" bytes read 1765 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|0|1765|0|0|0|2f636f6e73756c74612e706870|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/quitar_asignacion.php" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/index2.php" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/quitar_asignacion.php" bytes read 8128 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|0|8128|0|0|0|2f7175697461725f617369676e6163696f6e2e706870|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/index2.php" bytes read 185 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|0|185|0|0|0|2f696e646578322e706870|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/index.php" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/index.html" flags READ mode 0666
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/index.php" bytes read 185 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|0|185|0|0|0|2f696e6465782e706870|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 close "/index.html" bytes read 30914 written 0
+Aug 30 10:08:41 10.71.53.18 u77191306-1 [10.71.53.18|get|0|30914|0|0|0|2f696e6465782e68746d6c|]
+Aug 30 10:08:41 10.71.53.18 u77191306-1 open "/logout.php" flags READ mode 0666
+Aug 30 10:08:42 10.71.53.18 u77191306-1 open "/indexPruebaClase.php" flags READ mode 0666
+Aug 30 10:08:42 10.71.53.18 u77191306-1 close "/logout.php" bytes read 465 written 0
+Aug 30 10:08:42 10.71.53.18 u77191306-1 [10.71.53.18|get|1|465|0|0|0|2f6c6f676f75742e706870|]
+Aug 30 10:08:42 10.71.53.18 u77191306-1 open "/library2.php" flags READ mode 0666
+Aug 30 10:08:42 10.71.53.18 u77191306-1 close "/indexPruebaClase.php" bytes read 977 written 0
+Aug 30 10:08:42 10.71.53.18 u77191306-1 [10.71.53.18|get|0|977|0|0|0|2f696e646578507275656261436c6173652e706870|]
+Aug 30 10:08:42 10.71.53.18 u77191306-1 close "/library2.php" bytes read 1076 written 0
+Aug 30 10:08:42 10.71.53.18 u77191306-1 [10.71.53.18|get|0|1076|0|0|0|2f6c696272617279322e706870|]
+Aug 30 10:08:42 10.71.53.18 u77191306-1 open "/indexC.php" flags READ mode 0666
+Aug 30 10:08:42 10.71.53.18 u77191306-1 close "/indexC.php" bytes read 193 written 0
+Aug 30 10:08:42 10.71.53.18 u77191306-1 [10.71.53.18|get|0|193|0|0|0|2f696e646578432e706870|]
+Aug 30 10:08:42 10.71.53.18 u77191306-1 open "/logs/access.log.35.2.gz" flags READ mode 0666
+Aug 30 10:08:42 10.71.53.18 u77191306-1 close "/logs/access.log.35.2.gz" bytes read 154164 written 0
+Aug 30 10:08:42 10.71.53.18 u77191306-1 [10.71.53.18|get|0|154164|0|0|0|2f6c6f67732f6163636573732e6c6f672e33352e322e677a|]
+Aug 30 10:08:42 10.71.53.18 u77191306-1 open "/logs/sftp.log.32.gz" flags READ mode 0666
+Aug 30 10:08:43 10.71.53.18 u77191306-1 open "/logs/access.log.34.6.gz" flags READ mode 0666
+Aug 30 10:08:43 10.71.53.18 u77191306-1 close "/logs/sftp.log.32.gz" bytes read 8262 written 0
+Aug 30 10:08:43 10.71.53.18 u77191306-1 [10.71.53.18|get|1|8262|0|0|0|2f6c6f67732f736674702e6c6f672e33322e677a|]
+Aug 30 10:08:43 10.71.53.18 u77191306-1 close "/logs/access.log.34.6.gz" bytes read 47638 written 0
+Aug 30 10:08:43 10.71.53.18 u77191306-1 [10.71.53.18|get|0|47638|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e362e677a|]
+Aug 30 10:08:43 10.71.53.18 u77191306-1 open "/logs/access.log.34.3.gz" flags READ mode 0666
+Aug 30 10:08:43 10.71.53.18 u77191306-1 open "/logs/sftp.log.30.gz" flags READ mode 0666
+Aug 30 10:08:43 10.71.53.18 u77191306-1 close "/logs/access.log.34.3.gz" bytes read 115911 written 0
+Aug 30 10:08:43 10.71.53.18 u77191306-1 [10.71.53.18|get|0|115911|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e332e677a|]
+Aug 30 10:08:43 10.71.53.18 u77191306-1 close "/logs/sftp.log.30.gz" bytes read 2890 written 0
+Aug 30 10:08:43 10.71.53.18 u77191306-1 [10.71.53.18|get|0|2890|0|0|0|2f6c6f67732f736674702e6c6f672e33302e677a|]
+Aug 30 10:08:43 10.71.53.18 u77191306-1 open "/logs/access.log.35.4" flags READ mode 0666
+Aug 30 10:08:43 10.71.53.18 u77191306-1 open "/logs/access.log.35.1.gz" flags READ mode 0666
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.35.4" bytes read 390285 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|1|390285|0|0|0|2f6c6f67732f6163636573732e6c6f672e33352e34|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.35.1.gz" bytes read 92831 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|1|92831|0|0|0|2f6c6f67732f6163636573732e6c6f672e33352e312e677a|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 open "/logs/access.log.27.gz" flags READ mode 0666
+Aug 30 10:08:44 10.71.53.18 u77191306-1 open "/logs/access.log.34.4.gz" flags READ mode 0666
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.34.4.gz" bytes read 142561 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|0|142561|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e342e677a|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.27.gz" bytes read 576578 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|0|576578|0|0|0|2f6c6f67732f6163636573732e6c6f672e32372e677a|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 open "/logs/access.log.34.2.gz" flags READ mode 0666
+Aug 30 10:08:44 10.71.53.18 u77191306-1 open "/logs/access.log.34.1.gz" flags READ mode 0666
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.34.2.gz" bytes read 95036 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|0|95036|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e322e677a|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 close "/logs/access.log.34.1.gz" bytes read 90734 written 0
+Aug 30 10:08:44 10.71.53.18 u77191306-1 [10.71.53.18|get|0|90734|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e312e677a|]
+Aug 30 10:08:44 10.71.53.18 u77191306-1 open "/logs/access.log.30.gz" flags READ mode 0666
+Aug 30 10:08:45 10.71.53.18 u77191306-1 open "/logs/sftp.log.31.gz" flags READ mode 0666
+Aug 30 10:08:45 10.71.53.18 u77191306-1 close "/logs/access.log.30.gz" bytes read 597403 written 0
+Aug 30 10:08:45 10.71.53.18 u77191306-1 [10.71.53.18|get|1|597403|0|0|0|2f6c6f67732f6163636573732e6c6f672e33302e677a|]
+Aug 30 10:08:45 10.71.53.18 u77191306-1 close "/logs/sftp.log.31.gz" bytes read 4251 written 0
+Aug 30 10:08:45 10.71.53.18 u77191306-1 [10.71.53.18|get|0|4251|0|0|0|2f6c6f67732f736674702e6c6f672e33312e677a|]
+Aug 30 10:08:45 10.71.53.18 u77191306-1 open "/logs/access.log.34.5.gz" flags READ mode 0666
+Aug 30 10:08:45 10.71.53.18 u77191306-1 open "/logs/sftp.log.33.gz" flags READ mode 0666
+Aug 30 10:08:45 10.71.53.18 u77191306-1 close "/logs/access.log.34.5.gz" bytes read 199197 written 0
+Aug 30 10:08:45 10.71.53.18 u77191306-1 [10.71.53.18|get|0|199197|0|0|0|2f6c6f67732f6163636573732e6c6f672e33342e352e677a|]
+Aug 30 10:08:45 10.71.53.18 u77191306-1 close "/logs/sftp.log.33.gz" bytes read 11313 written 0
+Aug 30 10:08:45 10.71.53.18 u77191306-1 [10.71.53.18|get|0|11313|0|0|0|2f6c6f67732f736674702e6c6f672e33332e677a|]
+Aug 30 10:08:45 10.71.53.18 u77191306-1 open "/logs/access.log.31.gz" flags READ mode 0666
+Aug 30 10:08:45 10.71.53.18 u77191306-1 open "/logs/sftp.log.27.gz" flags READ mode 0666
+Aug 30 10:08:46 10.71.53.18 u77191306-1 close "/logs/access.log.31.gz" bytes read 690480 written 0
+Aug 30 10:08:46 10.71.53.18 u77191306-1 [10.71.53.18|get|1|690480|0|0|0|2f6c6f67732f6163636573732e6c6f672e33312e677a|]
+Aug 30 10:08:46 10.71.53.18 u77191306-1 close "/logs/sftp.log.27.gz" bytes read 301270 written 0
+Aug 30 10:08:46 10.71.53.18 u77191306-1 [10.71.53.18|get|1|301270|0|0|0|2f6c6f67732f736674702e6c6f672e32372e677a|]
+Aug 30 10:08:46 10.71.53.18 u77191306-1 open "/logs/access.log.32.gz" flags READ mode 0666
+Aug 30 10:08:46 10.71.53.18 u77191306-1 open "/logs/access.log.35.3.gz" flags READ mode 0666
+Aug 30 10:08:46 10.71.53.18 u77191306-1 close "/logs/access.log.35.3.gz" bytes read 134225 written 0
+Aug 30 10:08:46 10.71.53.18 u77191306-1 [10.71.53.18|get|0|134225|0|0|0|2f6c6f67732f6163636573732e6c6f672e33352e332e677a|]
+Aug 30 10:08:46 10.71.53.18 u77191306-1 close "/logs/access.log.32.gz" bytes read 708419 written 0
+Aug 30 10:08:46 10.71.53.18 u77191306-1 [10.71.53.18|get|0|708419|0|0|0|2f6c6f67732f6163636573732e6c6f672e33322e677a|]
+Aug 30 10:08:46 10.71.53.18 u77191306-1 open "/logs/sftp.log" flags READ mode 0666
+Aug 30 10:08:46 10.71.53.18 u77191306-1 open "/logs/access.log.33.gz" flags READ mode 0666
